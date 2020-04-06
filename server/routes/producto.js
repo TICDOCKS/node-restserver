@@ -21,7 +21,7 @@ app.get('/productos', verificaToken, (req, res) => {
     Producto.find({ disponible: true })
         .skip(desde)
         .limit(5)
-        .populate('usuario', 'nombre email')
+        .populate('usuario', 'nombre email google')
         .populate('categoria', 'descripcion')
         .exec((err, productos) => {
 

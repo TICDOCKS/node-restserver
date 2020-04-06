@@ -110,7 +110,7 @@ app.post('/categoria', verificaToken, (req, res) => {
 });
 
 // ============================
-// Mostrar todas las categorias
+// Actualiza categoria por if
 // ============================
 app.put('/categoria/:id', verificaToken, (req, res) => {
 
